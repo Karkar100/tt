@@ -17,6 +17,9 @@
 		EB901F9226B8269300C6549F /* ttUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB901F9126B8269300C6549F /* ttUITests.swift */; };
 		EB901FA026B82D3F00C6549F /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB901F9F26B82D3F00C6549F /* NewViewController.swift */; };
 		EB901FA426BD3A2900C6549F /* HTTPSCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB901FA326BD3A2900C6549F /* HTTPSCommunication.swift */; };
+		EB901FA626D67C4E00C6549F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB901FA526D67C4E00C6549F /* Network.swift */; };
+		EB901FA826D9279500C6549F /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB901FA726D9279500C6549F /* NextViewController.swift */; };
+		EB901FEC26DE34D700C6549F /* Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB901FEB26DE34D700C6549F /* Web.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		EB901F9326B8269300C6549F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB901F9F26B82D3F00C6549F /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		EB901FA326BD3A2900C6549F /* HTTPSCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPSCommunication.swift; sourceTree = "<group>"; };
+		EB901FA526D67C4E00C6549F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		EB901FA726D9279500C6549F /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		EB901FEB26DE34D700C6549F /* Web.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,9 @@
 				EB901F7126B8269200C6549F /* SceneDelegate.swift */,
 				EB901F7326B8269200C6549F /* ViewController.swift */,
 				EB901F9F26B82D3F00C6549F /* NewViewController.swift */,
+				EB901FA526D67C4E00C6549F /* Network.swift */,
+				EB901FEB26DE34D700C6549F /* Web.swift */,
+				EB901FA726D9279500C6549F /* NextViewController.swift */,
 				EB901F7526B8269200C6549F /* Main.storyboard */,
 				EB901F7826B8269300C6549F /* Assets.xcassets */,
 				EB901F7A26B8269300C6549F /* LaunchScreen.storyboard */,
@@ -265,7 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB901F7426B8269200C6549F /* ViewController.swift in Sources */,
+				EB901FA826D9279500C6549F /* NextViewController.swift in Sources */,
+				EB901FEC26DE34D700C6549F /* Web.swift in Sources */,
 				EB901FA426BD3A2900C6549F /* HTTPSCommunication.swift in Sources */,
+				EB901FA626D67C4E00C6549F /* Network.swift in Sources */,
 				EB901F7026B8269200C6549F /* AppDelegate.swift in Sources */,
 				EB901F7226B8269200C6549F /* SceneDelegate.swift in Sources */,
 				EB901FA026B82D3F00C6549F /* NewViewController.swift in Sources */,

@@ -64,51 +64,15 @@ class NewViewController: UIViewController {
 
                 // Данный метод содержит весь функционал по работе
                 // с интернетом и получению шутки.
-                self.retrieveRandomJokes()    // (E.3)
+            let network = Network()
+                network.screen = self
+                network.retrieveRandomJokes()    // (E.3)
             }
-    struct Joke: Codable {
-        var categories: Array<String>
-        var created_at: String
-        var icon_url: String
-        var id: String
-        var updated_at: String
-        var url: String
-        var value: String
-    }
+    
 
-                func retrieveRandomJokes() {
-                var request = URLRequest(url: URL(string: "https://api.chucknorris.io/jokes/random")!)
-                request.httpMethod = "GET"
-                request.allHTTPHeaderFields = ["AuthToken": "null"]
-                let task = URLSession.shared.dataTask(with: request) { data, response, error in
-                    print(String(decoding: data!, as: UTF8.self))
-                    let joke: Joke = try! JSONDecoder().decode(Joke.self, from: data!)
-                    print("Begin of code")
-                    let url1 = URL(string: joke.icon_url)!
-                    self.downloadImage(from: url1)
-                    print("End of code. The image will continue downloading in the background and it will be loaded when it ends.")
-                    DispatchQueue.main.async { [weak self] in
-                    self?.jokeLabel.text = joke.value
-                    self!.activityView.stopAnimating()
-                     }
-                }
-                task.resume()
-            }
-    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
-        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
-    }
-    func downloadImage(from url1: URL) {
-        print("Download Started")
-        getData(from: url1) { data, response, error in
-            guard let data = data, error == nil else { return }
-            print(response?.suggestedFilename ?? url1.lastPathComponent)
-            print("Download Finished")
-            // always update the UI from the main thread
-            DispatchQueue.main.async() { [weak self] in
-                self?.imageView.image = UIImage(data: data)
-            }
-        }
-    }
+
+
+ 
     }
 
 extension NewViewController {

@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    let newViewController = NewViewController()
     
     let simpleTableIdentifier = "SimpleTableIdentifier"
     
@@ -43,7 +44,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let newViewController = NewViewController()
         var row: Int = indexPath.row
         helper = row+1
         newViewController.receivedInt = helper ?? 0
